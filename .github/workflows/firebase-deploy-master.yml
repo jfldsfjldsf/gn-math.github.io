@@ -4,7 +4,7 @@ on:
   push:
     # Trigger deployment only on pushes to the 'master' branch
     branches:
-      - master
+      - main
 
 jobs:
   build_and_deploy:
