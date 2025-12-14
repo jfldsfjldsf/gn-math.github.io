@@ -1,10 +1,17 @@
 {
   "hosting": {
-    "public": ".",  // <--- **CHANGE THIS** to your build output folder (e.g., "dist" or "build")
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    // ADD THIS SECTION to tell Firebase to serve index.php instead of index.html
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.php"
+      }
     ]
   }
 }
